@@ -9,7 +9,7 @@
     "cache": "E:\\projects\\tomato-work-server\\node_modules\\egg-view\\config\\config.local.js",
     "defaultExtension": "E:\\projects\\tomato-work-server\\node_modules\\egg-view\\config\\config.default.js"
   },
-  "new": {
+  "news": {
     "pageSize": "E:\\projects\\tomato-work-server\\config\\config.default.js",
     "serverUrl": "E:\\projects\\tomato-work-server\\config\\config.default.js"
   },

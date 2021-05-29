@@ -279,3 +279,7 @@ res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"ab
 pid: 14600
 hostname: DESKTOP-jiuhua
 
+2021-05-29 16:45:30,578 WARN 10384 A client (::ffff:127.0.0.1:64346) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2021-05-29 16:45:48,066 WARN 10384 A client (::ffff:127.0.0.1:64356) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2021-05-29 16:46:20,285 WARN 6128 A client (::ffff:127.0.0.1:64380) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2021-05-29 16:47:09,451 WARN 10048 A client (::ffff:127.0.0.1:64425) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
