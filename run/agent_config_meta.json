@@ -1,0 +1,282 @@
+{
+  "keys": "E:\\projects\\tomato-work-server\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "E:\\projects\\tomato-work-server\\config\\config.default.js",
+    "mapping": {
+      ".tpl": "E:\\projects\\tomato-work-server\\config\\config.default.js"
+    },
+    "root": "E:\\projects\\tomato-work-server\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "E:\\projects\\tomato-work-server\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "E:\\projects\\tomato-work-server\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "new": {
+    "pageSize": "E:\\projects\\tomato-work-server\\config\\config.default.js",
+    "serverUrl": "E:\\projects\\tomato-work-server\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "E:\\projects\\tomato-work-server\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\projects\\tomato-work-server\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\projects\\tomato-work-server\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\projects\\tomato-work-server\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "E:\\projects\\tomato-work-server\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "ipExceptionList": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "E:\\projects\\tomato-work-server\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "E:\\projects\\tomato-work-server\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\projects\\tomato-work-server\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\projects\\tomato-work-server\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "E:\\projects\\tomato-work-server\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\projects\\tomato-work-server\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "E:\\projects\\tomato-work-server\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\projects\\tomato-work-server\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "E:\\projects\\tomato-work-server\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "E:\\projects\\tomato-work-server\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\projects\\tomato-work-server\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "E:\\projects\\tomato-work-server\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\projects\\tomato-work-server\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "E:\\projects\\tomato-work-server\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "allowArrayField": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js",
+      "disable": "E:\\projects\\tomato-work-server\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideIgnore": "E:\\projects\\tomato-work-server\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\projects\\tomato-work-server\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\projects\\tomato-work-server\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "E:\\projects\\tomato-work-server\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "E:\\projects\\tomato-work-server\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "E:\\projects\\tomato-work-server\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "E:\\projects\\tomato-work-server\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "E:\\projects\\tomato-work-server\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "description": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "main": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "repository": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "author": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "license": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "dev": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "egg": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "E:\\projects\\tomato-work-server\\node_modules\\egg\\config\\config.default.js"
+}

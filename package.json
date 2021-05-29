@@ -1,0 +1,18 @@
+{
+  "name": "tomato-work-server",
+  "version": "1.0.0",
+  "description": "server for tomat",
+  "main": "index.js",
+  "repository": "git@github.com:xszi/tomato-work-server.git",
+  "author": "xszi <jiuhuaw@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "egg-bin dev"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "egg": "^2.29.4",
+    "egg-bin": "^4.16.2",
+    "egg-view-nunjucks": "^2.3.0"
+  }
+}
