@@ -1,13 +1,8 @@
-'use strict'
+const express = require('express');
+const router = express.Router()
 
-module.exports = app => {
-    const {
-        router,
-        controller
-    } = app;
-    router.get('/', controller.home.index);
-    // router.get('/news', controller.news.list);
+const UserController = require('./controller/user')
 
-    require('./router/user')(app)
+router.post('/login', UserController.login)
 
-};
+module.exports = router;

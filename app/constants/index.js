@@ -1,4 +1,3 @@
-
 exports.errorCode = {
   // 正常
   0: 'success',
@@ -36,4 +35,17 @@ exports.messageType = {
       content: '欢迎来到Tomato Work, 这将为您提供一站式服务！'
     }
   }
+}
+
+exports.dataBaseConnectionConfig = {
+    sckemas: 'tomato_work',
+    loginName: 'root',
+    password: '123456',
+    database: {
+        host: 'localhost', // 数据库服务器地址
+        dialect: 'mysql', // 数据库类型
+        define: {
+            timestamps: false
+        }
+    }
 }

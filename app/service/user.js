@@ -1,134 +1,44 @@
-'use strict'
-
-const Service = require('egg').Service
+const Sequelize = require('sequelize');
+const path = require('path')
 const {
-    messageType
-} = require('../constants')
+    dataBaseConnectionConfig
+} = require('../constants/index')
+const UserModel = require('../model/User')
 
-class UserService extends Service {
+const {
+    sckemas,
+    loginName,
+    password,
+    database
+} = dataBaseConnectionConfig
 
+const sequelize = new Sequelize(sckemas, loginName, password, database);
+
+const user = UserModel(sequelize, Sequelize.DataTypes)
+
+class UserService {
     /**
-     * 注册用户 - 启用事务
-     * @param {Object} - user
+     * 账号密码登陆
+     * @param {Object} data
      * @return {Promise}
      */
-    async register(user) {
-        const {
-            ctx,
-            service
-        } = this
-        const result = await ctx.model.transaction(async t => {
-            const [userRes] = await Promise.all([
-                ctx.model.User.create(user, {
-                    transaction: t
-                }),
-                service.userConfigure.create({
-                    uid: user.uid
-                }, {
-                    transaction: t
-                }),
-                service.innerMessage.create(user.uid, messageType.system.welcome, {
-                    transaction: t
-                })
-            ])
 
-            return userRes
-        })
-
-        service.mail.register(user.loginName)
-
-        return result
-    }
-
-    /**
-     * 账号密码登录
-     * @param {Object} - data
-     * @return {Promise}
-     */
-    async findUserByLocal(data) {
-        const {
-            ctx
-        } = this
-        console.log(data, '-----------========');
-        return ctx.model.User.findOne({
-            exclude: ['password'],
+    async findUserByLocal(req, res) {
+        // findOne & findAll
+        const row = await user.findAll({
             where: {
-                loginName: data.loginName,
-                password: data.password
+                username: '1',
             }
-        })
-    }
-
-    /**
-     * 通过用户ID查找用户
-     * @param {Number} - uid
-     * @return {Promise}
-     */
-    async findUserByUid(uid) {
-        const {
-            ctx
-        } = this
-        return ctx.model.User.findOne({
-            exclude: ['password'],
-            where: {
-                uid
-            }
-        })
-    }
-
-    /**
-     * 通过token查找用户
-     * @param {String} - token
-     * @return {Promise}
-     */
-    async findUserByToken(token) {
-        const {
-            ctx
-        } = this
-        return ctx.model.User.findOne({
-            exclude: ['password'],
-            where: {
-                token
-            }
-        })
-    }
-
-    /**
-     * 通过用户ID更新用户信息
-     * @param {Number} - uid
-     * @param {Object} - data
-     * @return {Promise}
-     */
-    async updateUser(uid, data) {
-        const {
-            ctx
-        } = this
-        return ctx.model.User.update(data, {
-            where: {
-                uid
-            }
-        })
-    }
-
-    /**
-     * 通过uid查找用户email
-     * @param {Number|Array} - uid
-     * @return {Promise}
-     */
-    async findEmailByUid(uid) {
-        const {
-            ctx
-        } = this
-        return ctx.model.User.findAll({
-            attributes: ['email'],
-            where: {
-                uid: {
-                    [ctx.Op.in]: Array.isArray(uid) ? uid : [uid]
-                }
-            },
-            raw: true
-        })
+        });
+        res.json({
+            ret: 0,
+            status: 'ok',
+            content: row
+        });
+        // res.send(`${row.username} 您已登录`);
+        // res.sendFile(path.resolve(__dirname, './index.html'));
+        console.log(row, 'service=====row');
     }
 }
 
-module.exports = UserService
+module.exports = new UserService()

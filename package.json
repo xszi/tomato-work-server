@@ -1,18 +1,21 @@
 {
   "name": "tomato-work-server",
   "version": "1.0.0",
-  "description": "server for tomat",
+  "description": "server for tomato",
   "main": "index.js",
   "repository": "git@github.com:xszi/tomato-work-server.git",
   "author": "xszi <jiuhuaw@126.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "egg-bin dev"
+    "dev": "nodemon server.js"
   },
   "devDependencies": {},
   "dependencies": {
-    "egg": "^2.29.4",
-    "egg-bin": "^4.16.2",
-    "egg-view-nunjucks": "^2.3.0"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
   }
 }
