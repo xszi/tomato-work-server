@@ -1,20 +1,27 @@
-// 处理数据库数据的返回
+/**
+ * 拿到数据库数据的返回，处理后返回最终结果
+ */ 
 
-// 获取
-const path = require('path')
 const UserService = require('../service/user')
 
 class UserController {
 
-
     async login(req, res) {
-        // const { loginToken } = req.cookies;
-        // if (!loginToken) {
-        //   return res.sendFile(path.resolve(__dirname, './index.html'));
-        // }
 
-        console.log(req.body, 22222555555);
-        const findUserByLocal = UserService.findUserByLocal(req, res)
+        const row = await UserService.findUserByLocal(req, res)
+        if (row) {
+            res.json({
+                status: 'ok',
+                content: row,
+                msg: '登陆成功'
+            });
+        } else {
+            res.json({
+                status: 'error',
+                content: null,
+                msg: '用户名或密码错误'
+            });
+        }
     }
 }
 

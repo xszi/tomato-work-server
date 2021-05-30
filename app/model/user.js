@@ -1,3 +1,6 @@
+/**
+ * 定义数据Schema
+ */
 
 module.exports = function (sequelize, dataTypes) {
     // 定义User模型

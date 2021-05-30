@@ -1,9 +1,12 @@
+/**
+ * Service层处理数据路连接和查询，返回数据到Controller层
+ */
+
 const Sequelize = require('sequelize');
-const path = require('path')
+const UserModel = require('../model/User')
 const {
     dataBaseConnectionConfig
 } = require('../constants/index')
-const UserModel = require('../model/User')
 
 const {
     sckemas,
@@ -25,19 +28,11 @@ class UserService {
 
     async findUserByLocal(req, res) {
         // findOne & findAll
-        const row = await user.findAll({
+        return await user.findOne({
             where: {
-                username: '1',
+                username: req.body.username,
             }
         });
-        res.json({
-            ret: 0,
-            status: 'ok',
-            content: row
-        });
-        // res.send(`${row.username} 您已登录`);
-        // res.sendFile(path.resolve(__dirname, './index.html'));
-        console.log(row, 'service=====row');
     }
 }
 
