@@ -30,7 +30,7 @@ class UserService {
         // findOne & findAll
         return await user.findOne({
             where: {
-                username: req.body.username,
+                username: req.body.loginName,
             }
         });
     }

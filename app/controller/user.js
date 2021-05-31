@@ -7,7 +7,10 @@ const UserService = require('../service/user')
 class UserController {
 
     async login(req, res) {
-
+        console.log(req.body.code, req.session, 'controller');
+        if (req.body.code !== req.session.captcha) {
+            return res.send({code: 1, msg: '验证码不正确'})
+        }
         const row = await UserService.findUserByLocal(req, res)
         if (row) {
             res.json({
