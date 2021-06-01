@@ -21,9 +21,26 @@ mysql -u root -p
 
 ### 关于跨域
 
+前端反向代理（proxy）
+```js
+proxy: {
+    '/api': 'http://localhost:3000'
+}
+```
+
+后端设置可跨域
+```js
+app.use(cors({
+    origin: "http://localhost:7000",
+    credentials: true,
+}));
+```
+
+前端axios请求：axios.defaults.withCredentials = true
+
+### 关于cookie操作
 如果后台设置httpOnly: true，则前端js不能操作cookie，即domain.cookie不能获取到，只能能浏览器自动带上。
 
-cors库设置 credentials: true 解决关于跨域
 
 ### XSRF (跨站请求伪造)
 
