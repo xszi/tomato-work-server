@@ -25,20 +25,23 @@ class UserController {
     }
     // 验证登录
     async login(req, res) {
-        console.log(req.body.code, req.session, 'controller');
         if (req.body.code !== req.session.captcha) {
-            return res.send({code: 1, msg: '验证码不正确'})
+            return res.send({
+                success: false,
+                type: 'verify',
+                msg: '验证码不正确'
+            })
         }
         const row = await UserService.findUserByLocal(req, res)
         if (row) {
             res.json({
-                status: 'ok',
+                success: true,
                 content: row,
                 msg: '登陆成功'
             });
         } else {
             res.json({
-                status: 'error',
+                success: false,
                 content: null,
                 msg: '用户名或密码错误'
             });

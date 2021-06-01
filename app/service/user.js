@@ -31,6 +31,7 @@ class UserService {
         return await user.findOne({
             where: {
                 username: req.body.loginName,
+                password: req.body.password
             }
         });
     }
