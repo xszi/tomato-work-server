@@ -40,12 +40,40 @@ class UserController {
                 msg: '登陆成功'
             });
         } else {
-            res.json({
+            return res.json({
                 success: false,
                 content: null,
                 msg: '用户名或密码错误'
             });
         }
+    }
+    // 注册用户
+    async register(req, res) {
+        if (req.body.code !== req.session.captcha) {
+            return res.send({
+                success: false,
+                type: 'verify',
+                msg: '验证码不正确'
+            })
+        }
+        const queryRow = await UserService.queryUser(req, res)
+        if (queryRow) {
+            return res.send({
+                success: false,
+                type: 'verify',
+                msg: '该用户已存在！'
+            })
+        }
+        const row = await UserService.regiterAccount(req, res)
+        setTimeout(() => {
+            if (row) {
+                return res.send({
+                    success: true,
+                    content: row.dataValues,
+                    msg: '注册成功！'
+                })
+            }
+        }, 2000)
     }
 }
 

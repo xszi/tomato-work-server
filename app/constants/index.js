@@ -45,7 +45,7 @@ exports.dataBaseConnectionConfig = {
         host: 'localhost', // 数据库服务器地址
         dialect: 'mysql', // 数据库类型
         define: {
-            timestamps: false
+            timestamps: false //启用或不启用Sequelize为开发者自动添加时间，默认为true。
         }
     }
 }

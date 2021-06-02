@@ -1,6 +1,7 @@
 /**
  * 定义数据Schema
  */
+ const Sequelize = require('sequelize');
 
 module.exports = function (sequelize, dataTypes) {
     // 定义User模型
@@ -63,9 +64,20 @@ module.exports = function (sequelize, dataTypes) {
                 type: dataTypes.STRING(20),
                 allowNull: false,
                 defaultValue: '',
-                validate: {
-                    isIP: true
-                }
+                // validate: {
+                    // isIP: true,
+                    // isIP: false
+                // }
+            },
+            created_at: {
+                type: dataTypes.DATE,
+                allowNull: false,
+                defaultValue: Sequelize.NOW
+            },
+            updated_at: {
+                type: dataTypes.DATE,
+                allowNull: false,
+                defaultValue: Sequelize.NOW
             },
             role: {
                 type: dataTypes.TINYINT(1),
